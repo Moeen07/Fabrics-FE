@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Product Showcase</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Font Awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Product Items -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="category-box item-category">
+            <img
+              src="images/o1.jpg"
+              alt="Product Image"
+              class="category-image"
+              data-toggle="modal"
+              data-target="#productModal1"
+            />
+          </div>
+        </div>
+
+        <!-- Add more product items with similar structure -->
+        <div class="col-md-4">
+          <div class="category-box item-category">
+            <img
+              src="images/o2.jpg"
+              alt="Product Image"
+              class="category-image"
+              data-toggle="modal"
+              data-target="#productModal2"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="category-box item-category">
+            <img
+              src="images/o3.jpg"
+              alt="Product Image"
+              class="category-image"
+              data-toggle="modal"
+              data-target="#productModal3"
+            />
+          </div>
+        </div>
+        <!-- Add more product items as needed -->
+      </div>
+    </div>
+
+    <!-- Bootstrap modals for product details -->
+    <!-- Product 1 Modal -->
+    <div
+      class="modal fade"
+      id="productModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="productModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalLabel1">
+              Product Details 1
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/o1.jpg"
+              alt="Product Image"
+              class="img-fluid mb-3"
+            />
+            <p>Product details for item 1 go here...</p>
+            <!-- Add more content as needed -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 Modal -->
+    <div
+      class="modal fade"
+      id="productModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="productModalLabel2"
+      aria-hidden="true"
+    >
+      <!-- Similar structure as Product 1 Modal, adjust content accordingly -->
+    </div>
+
+    <!-- Product 3 Modal -->
+    <div
+      class="modal fade"
+      id="productModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="productModalLabel3"
+      aria-hidden="true"
+    >
+      <!-- Similar structure as Product 1 Modal, adjust content accordingly -->
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
+<style>
+  .category-box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .category-box:hover {
+    background-color: #e80d0d;
+  }
+
+  .category-box a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .category-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjusted border-radius */
+  }
+
+  .category-box h3 {
+    position: absolute;
+    bottom: 15%; /* Adjusted bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 26px; /* Increased font size */
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* Styling for the Suits category */
+  .item-category {
+    margin-bottom: 20px;
+  }
+
+  /* Styling for the category row */
+  .category-row {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
